@@ -1,7 +1,7 @@
 //Aluno: Vinicius Grando Marques RGM: 1946553-0
-//Prof: José Luis Pagotto
-//Disciplina: Programação de Computadores
-//Programa para Sequência de Fibonacci
+//Prof: JosÃ© Luis Pagotto
+//Disciplina: ProgramaÃ§Ã£o de Computadores
+//Programa para SequÃªncia de Fibonacci
 
 #include<stdio.h>
 #include<locale.h>
@@ -21,21 +21,21 @@ main ()
 	{
 		
 		n=0;fab1=0;fab2=1;fab=0;i=0;
-		printf("|/========== Sequência de Fibonacci ==============|\n"); //Menu
+		printf("|/========== SequÃªncia de Fibonacci ==============|\n"); //Menu
 		printf("|=================================================|\n");
-		printf("| [1] Exibir Sequência                            |\n");
+		printf("| [1] Exibir SequÃªncia                            |\n");
 		printf("| [2] SAIR                                        |\n");
 		printf("|================================================/|\n");
 	
-		printf("Escolha uma opcão: "); //Selecão
+		printf("Escolha uma opcÃ£o: "); //SelecÃ£o
 		scanf("%i", &opcao);
 		fflush(stdin); //Limpa Buffer do Teclado
 		system("cls"); //Limpa a Tela
 			
-		if (opcao == 2) //Caso o Usuario Escolha a 2 opção
+		if (opcao == 2) //Caso o Usuario Escolha a 2 opÃ§Ã£o
 		{
 			printf("|=================================|\n");
-			printf("|        Até a Proxíma :)         |\n");
+			printf("|        AtÃ© a PrÃ³xima :)         |\n");
 			printf("|            Obrigado!            |\n");
 			printf("|=================================|\n\n");
 			return 0;
@@ -43,12 +43,12 @@ main ()
 		if (opcao == 1)
 		{
 			printf("|==============================================================|\n");
-			printf("|   Quantos Números da Sequência de Fibonacci Deseja Exibir?   |\n");
+			printf("|   Quantos NÃºmeros da SequÃªncia de Fibonacci Deseja Exibir?   |\n");
 			printf("|==============================================================|\n");
 			scanf("%d",&n);
 			system("cls"); //Limpa a Tela
 			printf("|==============================================================|\n");
-			printf("|    Os Primeiros %d Números da Sequencia de Fibonacci São      |\n ===>|",n);
+			printf("|    Os Primeiros %d NÃºmeros da Sequencia de Fibonacci SÃ£o      |\n ===>|",n);
 
    		for (i = 0 ; i <= n - 1 ; i++ )
    		{
@@ -61,12 +61,12 @@ main ()
 			printf("|==============================================================|\n");
 		}
 		
-		system("pause\n"); //Opções de Saída
+		system("pause\n"); //OpÃ§Ãµes de SaÃ­da
 		system("cls"); //Limpa a Tela
 	        
 	 	printf("|============================|\n");
 	 	printf("|        Deseja Sair?        |\n");
-	 	printf("|       [1] SIM [2] NÃO      |\n");
+	 	printf("|       [1] SIM [2] NÃƒO      |\n");
 		printf("|============================|\n");
 		scanf("%i", &resposta);
 		fflush(stdin);
@@ -80,7 +80,7 @@ main ()
 		else
 		{
 			printf("|=================================|\n");
-			printf("|        Até a Proxíma :)         |\n");
+			printf("|        AtÃ© a PrÃ³xima :)         |\n");
 			printf("|            Obrigado!            |\n");
 			printf("|=================================|\n");
 			flag = 1;
