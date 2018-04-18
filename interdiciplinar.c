@@ -1,7 +1,7 @@
 //Aluno: Vinicius Grando Marques RGM: 1946553-0 | Renato Vaz Domingues Jr RGM: 1945439-2 
-//Prof: JosÈ Luis Pagotto
-//Disciplina: ProgramaÁ„o de Computadores
-//Programa para Calculo de MÈdia de Notas
+//Prof: Jos√© Luis Pagotto
+//Disciplina: Programa√ß√£o de Computadores
+//Programa para Calculo de M√©dia de Notas
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -27,17 +27,17 @@ main ()
 		printf("                 |/============ SELECIONE A MATERIA ================|\n"); //Menu
 		printf("                 ||=================================================|\n");
 		printf("                 || [1] SISTEMAS OPERACIONAIS                       |\n");
-		printf("                 || [2] LÕNGUA PORTUGUESA                           |\n");
-		printf("                 || [3] APLICA«’ES PARA INTERNET                    |\n");
-		printf("                 || [4] ORGANIZA«√O E ARQUITETURA DE COMPUTADORES   |\n");
-		printf("                 || [5] PROGRAMA«√O DE COMPUTADORES                 |\n");
+		printf("                 || [2] L√çNGUA PORTUGUESA                           |\n");
+		printf("                 || [3] APLICA√á√ïES PARA INTERNET                    |\n");
+		printf("                 || [4] ORGANIZA√á√ÉO E ARQUITETURA DE COMPUTADORES   |\n");
+		printf("                 || [5] PROGRAMA√á√ÉO DE COMPUTADORES                 |\n");
 		printf("                 || [6] ENGENHARIA DE REQUISITOS                    |\n");
-		printf("                 || [7] FUNDAMENTOS DE SISTEMAS DE INFORMA«√O       |\n");
+		printf("                 || [7] FUNDAMENTOS DE SISTEMAS DE INFORMA√á√ÉO       |\n");
 		printf("                 || [8] INTERFACE HUMANO-COMPUTADOR                 |\n");
-		printf("                 || [9] MODELAGEM DE NEG”CIOS                       |\n");
+		printf("                 || [9] MODELAGEM DE NEG√ìCIOS                       |\n");
 		printf("                 ||[10] SAIR                                        |\n");
 		printf("                 ||================================================/|\n");
-		printf("                 ||Escolha uma opc„o: "); //Selecao da Materia
+		printf("                 ||Escolha uma opc√£o: "); //Selecao da Materia
 		scanf("%i", &opcao);
 		fflush(stdin); //Limpa Buffer do Teclado
 		system("cls"); //Limpa a Tela
@@ -45,7 +45,7 @@ main ()
 		if (opcao == 10)
 		{
 			printf("|=================================|\n");
-			printf("|        AtÈ a ProxÌma :)         |\n");
+			printf("|        At√© a Pr√≥xima :)         |\n");
 			printf("|            Obrigado!            |\n");
 			printf("|=================================|\n\n");
 			return 0;
@@ -56,28 +56,28 @@ main ()
 		fflush(stdin); //Limpa Buffer do Teclado
 		system("cls"); //Limpa a Tela
 	
-		printf("                 |=====>Digite a nota da AvaliaÁ„o A1<=====|\n"); //Nota A1
+		printf("                 |=====>Digite a nota da Avalia√ß√£o A1<=====|\n"); //Nota A1
 		printf("                 |=====>Valor 0 a 5,0<=====================|\n");
 		scanf("%4f", &n1);
 		system("cls"); //Limpa a Tela
 			if (n1 < 0 || n1 > 5)
 			{
 				printf("                 |===============================================|\n");
-				printf("                 |========>Nota M·xima de A1 Excedida!!!<========|\n"); //Mensagem de Erro!
+				printf("                 |========>Nota M√°xima de A1 Excedida!!!<========|\n"); //Mensagem de Erro!
 				printf("                 |===============================================|\n");
 				system("pause");
 				return 0;
 				system("cls");//Limpa a Tela
 			}
 	
-		printf("                 |=====>Digite a nota da AvaliaÁ„o A2<=====|\n"); //Nota A2
+		printf("                 |=====>Digite a nota da Avalia√ß√£o A2<=====|\n"); //Nota A2
 		printf("                 |=====>Valor 0 a 5,0<=====================|\n");
 		scanf("%4f", &n2);
 		system("cls"); //Limpa a Tela
 			if (n2 < 0 || n2 > 5)
 			{
 				printf("                 |===============================================|\n");
-				printf("                 |========>Nota M·xima de A2 Excedida!!!<========|\n"); //Mensagem de Erro!
+				printf("                 |========>Nota M√°xima de A2 Excedida!!!<========|\n"); //Mensagem de Erro!
 				printf("                 |===============================================|\n");
 				system("pause");
 				return 0;
@@ -102,11 +102,11 @@ main ()
 			printf("|==============================================|\n");
 		}
 	
-		else if (opcao == 2) if (media >=6) //LÕNGUA PORTUGUESA
+		else if (opcao == 2) if (media >=6) //L√çNGUA PORTUGUESA
 		{
 			printf("|==============================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: LÕNGUA PORTUGUESA<=========|\n");
+			printf("|=====>APROVADO EM: L√çNGUA PORTUGUESA<=========|\n");
 			printf("|=====>NOTA: %.2f<=============================|\n", media);
 			printf("|==============================================|\n");
 		}
@@ -114,16 +114,16 @@ main ()
 		{
 			printf("|==============================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>REPROVADO EM: LÕNGUA PORTUGUESA<========|\n");
+			printf("|=====>REPROVADO EM: L√çNGUA PORTUGUESA<========|\n");
 			printf("|=====>NOTA: %.2f<=============================|\n", media);
 			printf("|==============================================|\n");
 		}
 							
-		else if (opcao == 3) if (media >=6) //APLICA«’ES PARA INTERNET
+		else if (opcao == 3) if (media >=6) //APLICA√á√ïES PARA INTERNET
 		{
 			printf("|==============================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: APLICA«’ES PARA INTERNET<==|\n");
+			printf("|=====>APROVADO EM: APLICA√á√ïES PARA INTERNET<==|\n");
 			printf("|=====>NOTA: %.2f<=============================|\n", media);
 			printf("|==============================================|\n");
 		}
@@ -131,16 +131,16 @@ main ()
 		{
 			printf("|==============================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>REPROVADO EM: APLICA«’ES PARA INTERNET<=|\n");
+			printf("|=====>REPROVADO EM: APLICA√á√ïES PARA INTERNET<=|\n");
 			printf("|=====>NOTA: %.2f<=============================|\n", media);
 			printf("|==============================================|\n");
 		}
 		
-		else if (opcao == 4) if (media >=6) //ORGANIZA«√O E ARQUITETURA DE COMPUTADORES
+		else if (opcao == 4) if (media >=6) //ORGANIZA√á√ÉO E ARQUITETURA DE COMPUTADORES
 		{
 			printf("|==============================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: ORGANIZA«√O E ARQUITETURA DE COMPUTADORES<=|\n");
+			printf("|=====>APROVADO EM: ORGANIZA√á√ÉO E ARQUITETURA DE COMPUTADORES<=|\n");
 			printf("|=====>NOTA: %.2f<=============================================|\n", media);
 			printf("|==============================================================|\n");
 		}
@@ -148,16 +148,16 @@ main ()
 		{
 			printf("|===============================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>REPROVADO EM: ORGANIZA«√O E ARQUITETURA DE COMPUTADORES<=|\n");
+			printf("|=====>REPROVADO EM: ORGANIZA√á√ÉO E ARQUITETURA DE COMPUTADORES<=|\n");
 			printf("|=====>NOTA: %.2f<==============================================|\n", media);
 			printf("|===============================================================|\n");
 		}
 		
-		else if (opcao == 5) if (media >=6) //PROGRAMA«√O DE COMPUTADORES
+		else if (opcao == 5) if (media >=6) //PROGRAMA√á√ÉO DE COMPUTADORES
 		{
 			printf("|==============================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: PROGRAMA«√O DE COMPUTADORES<===============|\n");
+			printf("|=====>APROVADO EM: PROGRAMA√á√ÉO DE COMPUTADORES<===============|\n");
 			printf("|=====>NOTA: %.2f<=============================================|\n", media);
 			printf("|==============================================================|\n");
 		}
@@ -165,7 +165,7 @@ main ()
 		{
 			printf("|=========================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>REPROVADO EM: PROGRAMA«√O DE COMPUTADORES<=========|\n");
+			printf("|=====>REPROVADO EM: PROGRAMA√á√ÉO DE COMPUTADORES<=========|\n");
 			printf("|=====>NOTA: %.2f<========================================|\n", media);
 			printf("|=========================================================|\n");
 		}
@@ -187,11 +187,11 @@ main ()
 			printf("|==================================================|\n");
 		}
 		
-		else if (opcao == 7) if (media >=6) //FUNDAMENTOS DE SISTEMAS DE INFORMA«√O
+		else if (opcao == 7) if (media >=6) //FUNDAMENTOS DE SISTEMAS DE INFORMA√á√ÉO
 		{
 			printf("|==============================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: FUNDAMENTOS DE SISTEMAS DE INFORMA«√O<=====|\n");
+			printf("|=====>APROVADO EM: FUNDAMENTOS DE SISTEMAS DE INFORMA√á√ÉO<=====|\n");
 			printf("|=====>NOTA: %.2f<=============================================|\n", media);
 			printf("|==============================================================|\n");
 		}
@@ -199,7 +199,7 @@ main ()
 		{
 			printf("|===============================================================|\n");
 			printf("|=====>ALUNO: %s\n<====", nome_aluno);
-			printf("|=====>REPROVADO EM: FUNDAMENTOS DE SISTEMAS DE INFORMA«√O<=====|\n");
+			printf("|=====>REPROVADO EM: FUNDAMENTOS DE SISTEMAS DE INFORMA√á√ÉO<=====|\n");
 			printf("|=====>NOTA: %.2f<==============================================|\n", media);
 			printf("|===============================================================|\n");
 		}
@@ -221,11 +221,11 @@ main ()
 			printf("|=======================================================|\n");
 		}
 		
-		else if (opcao == 9) if (media >=6) //MODELAGEM DE NEG”CIOS
+		else if (opcao == 9) if (media >=6) //MODELAGEM DE NEG√ìCIOS
 		{
 			printf("|================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>APROVADO EM: MODELAGEM DE NEG”CIOS<=======|\n");
+			printf("|=====>APROVADO EM: MODELAGEM DE NEG√ìCIOS<=======|\n");
 			printf("|=====>NOTA: %.2f<===============================|\n", media);
 			printf("|================================================|\n");
 		}
@@ -233,19 +233,19 @@ main ()
 		{
 			printf("|================================================|\n");
 			printf("|=====>ALUNO: %s<====\n", nome_aluno);
-			printf("|=====>REPROVADO EM: MODELAGEM DE NEG”CIOS<======|\n");
+			printf("|=====>REPROVADO EM: MODELAGEM DE NEG√ìCIOS<======|\n");
 			printf("|=====>NOTA: %.2f<===============================|\n", media);
 			printf("|================================================|\n");
 		}
 		
 	
 	
-		system("pause\n"); //OpÁıes de SaÌda
+		system("pause\n"); //Op√ß√µes de Sa√≠da
 		system("cls"); //Limpa a Tela
 	        
 	 	printf("|============================|\n");
 	 	printf("|        Deseja Sair?        |\n");
-	 	printf("|       [1] SIM [2] N√O      |\n");
+	 	printf("|       [1] SIM [2] N√ÉO      |\n");
 		printf("|============================|\n");
 		scanf("%i", &resposta);
 		fflush(stdin);
@@ -259,7 +259,7 @@ main ()
 		else
 		{
 			printf("|=================================|\n");
-			printf("|        AtÈ a ProxÌma :)         |\n");
+			printf("|        At√© a Pr√≥xima :)         |\n");
 			printf("|            Obrigado!            |\n");
 			printf("|=================================|\n");
 			flag = 1;
