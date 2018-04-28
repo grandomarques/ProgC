@@ -55,6 +55,7 @@ main ()
 			scanf("%[^\n]", &nome_aluno);
 			fflush(stdin); //Limpa Buffer do Teclado
 			system("cls"); //Limpa a Tela
+			
 		
 		A1:// Ciclo A1
 			
